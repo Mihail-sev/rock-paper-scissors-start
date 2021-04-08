@@ -27,11 +27,11 @@ scissors = '''
 from random import *
 choose = [rock, paper, scissors]
 human = int(input("Make your choise: 1 - rock, 2 - paper, 3 - scissors\n"))
-if human <0 or human >3:
+if human < 0 or human > 3:
   print ("Your make incorrect choise, you lose!")
 else:
   print ("Your choise\n" + choose[human-1] + "\nComputer choise")
-computer = randint(1,3)3
+computer = randint(1,3)
 print (choose [computer-1])
 if human == computer:
   print ("Is draw!")
